@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		F009CF73295365DD00A31972 /* Task_28.h in Headers */ = {isa = PBXBuildFile; fileRef = F009CF72295365DD00A31972 /* Task_28.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F009CF7B2953662300A31972 /* OtusHomework in Frameworks */ = {isa = PBXBuildFile; productRef = F009CF7A2953662300A31972 /* OtusHomework */; };
+		F009CF7F295366CC00A31972 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F009CF7E295366CC00A31972 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F009CF6F295365DD00A31972 /* Task_28.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Task_28.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F009CF72295365DD00A31972 /* Task_28.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Task_28.h; sourceTree = "<group>"; };
+		F009CF7E295366CC00A31972 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +23,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F009CF7B2953662300A31972 /* OtusHomework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,6 +49,7 @@
 		F009CF71295365DD00A31972 /* Task-28 */ = {
 			isa = PBXGroup;
 			children = (
+				F009CF7E295366CC00A31972 /* ViewController.swift */,
 				F009CF72295365DD00A31972 /* Task_28.h */,
 			);
 			path = "Task-28";
@@ -78,6 +83,9 @@
 			dependencies = (
 			);
 			name = "Task-28";
+			packageProductDependencies = (
+				F009CF7A2953662300A31972 /* OtusHomework */,
+			);
 			productName = "Task-28";
 			productReference = F009CF6F295365DD00A31972 /* Task_28.framework */;
 			productType = "com.apple.product-type.framework";
@@ -93,6 +101,7 @@
 				TargetAttributes = {
 					F009CF6E295365DD00A31972 = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 				};
 			};
@@ -105,6 +114,9 @@
 				Base,
 			);
 			mainGroup = F009CF65295365DD00A31972;
+			packageReferences = (
+				F009CF792953662300A31972 /* XCRemoteSwiftPackageReference "OtusHomework" */,
+			);
 			productRefGroup = F009CF70295365DD00A31972 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -129,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F009CF7F295366CC00A31972 /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +271,7 @@
 		F009CF77295365DD00A31972 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -277,15 +291,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egbad.Task-28";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		F009CF78295365DD00A31972 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -305,9 +322,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.egbad.Task-28";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -333,6 +351,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F009CF792953662300A31972 /* XCRemoteSwiftPackageReference "OtusHomework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/NikkoGladkko/OtusHomework.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F009CF7A2953662300A31972 /* OtusHomework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F009CF792953662300A31972 /* XCRemoteSwiftPackageReference "OtusHomework" */;
+			productName = OtusHomework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F009CF66295365DD00A31972 /* Project object */;
 }
