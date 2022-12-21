@@ -14,7 +14,7 @@ public final class ViewController: UIViewController {
     
     private let label: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 24, weight: .bold)
+        label.font = .systemFont(ofSize: 48, weight: .bold)
         label.numberOfLines = 0
         label.text = "Badmaev Egor"
         label.translatesAutoresizingMaskIntoConstraints = false
